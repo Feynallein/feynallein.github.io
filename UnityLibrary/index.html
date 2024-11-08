@@ -5,13 +5,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | TechnicalDemo</title>
+    <title>Unity WebGL Player | DemoProject</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=960 height=540 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -22,7 +22,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">TechnicalDemo</div>
+        <div id="unity-build-title">DemoProject</div>
       </div>
     </div>
     
@@ -90,14 +90,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/TechincalDemo.loader.js";
+      var loaderUrl = buildUrl + "/Web.loader.js";
       var config = {
-        dataUrl: buildUrl + "/TechincalDemo.data",
-        frameworkUrl: buildUrl + "/TechincalDemo.framework.js",
-        codeUrl: buildUrl + "/TechincalDemo.wasm",
+        dataUrl: buildUrl + "/Web.data",
+        frameworkUrl: buildUrl + "/Web.framework.js",
+        codeUrl: buildUrl + "/Web.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "TechnicalDemo",
+        companyName: "FeynsGames",
+        productName: "DemoProject",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -128,7 +128,7 @@
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
         canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.height = "540px";
       }
 
       loadingBar.style.display = "block";
@@ -137,12 +137,10 @@
       script.src = loaderUrl;
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
-          progressBarFull.style.width = 100 * progress + "%";
-              
-         }).then((unityInstance) => {
-           window.parent.postMessage('unityReady', '*');
-           mainUnityInstance = unityInstance;
-         
+          progressBarFull.style.width = 100 * progress + "%"; 
+             }).then((unityInstance) => {
+                window.parent.postMessage('unityReady', '*');
+                mainUnityInstance = unityInstance;
                 loadingBar.style.display = "none";
                 fullscreenButton.onclick = () => {
                   unityInstance.SetFullscreen(1);

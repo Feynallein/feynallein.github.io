@@ -74048,7 +74048,7 @@ E1(a){var s=null,r=A.a1p(A.eZ(a),A.cg("- \\[[x ]?\\]",!0,!1,!1),new A.amV(),s),q
 q.toString
 return A.eq(r,s,s,s,B.DE,s,s,s,A.ag(q).p2.z,s,s,s)},
 J(a){var s,r,q=this,p=null,o=t.E,n=A.a([A.eq(A.eZ("demo")+" (WIP)",p,p,p,p,p,p,p,A.ag(a).p2.r,p,p,p),B.ki],o),m=t.l
-if(A.cE(a,p,m).w.a.a>764)n.push(A.lL(A.kZ(new A.B8(q.ga2m(),!q.e,!1,q.Zs(),p),642,960),p,p))
+if(A.cE(a,p,m).w.a.a>764)n.push(A.lL(A.kZ(new A.B8(q.ga2m(),!q.e,!1,q.Zs(),p),582,960),p,p))
 else n.push(A.eq(A.eZ("not_wide_enough"),p,p,p,p,p,p,p,A.ag(a).p2.z,p,p,p))
 n.push(B.ki)
 n.push(A.eq(A.eZ("demo_desc"),p,p,p,p,p,p,p,A.ag(a).p2.z,p,p,p))
