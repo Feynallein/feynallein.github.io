@@ -8,7 +8,7 @@
 	"not_wide_enough":"The page isn't wide enough to display the demo.",
 	"vg_projects":"Video game projects",
 	"demo_desc":"As you awake in this empty room, an oppressive gaze weighs upon you. As you walk closer to the alter in the room's centre, you feel an irresistible urge to reach out for it... But as your hand touches the cold stone, the gaze intensifies and a power courses through the ruins. The Ancient Guardian has awakened and his wrathful stare is upon you...",
-	"demo_technical_desc":"This demo shows my skills as a video game developer.\nEverything has been done by me. As I am not an artist, all the visuals are made out of shaders and every animation is procedural.\n\nThis project is still a work in progress and will be regularly updated.\n\nFor now, it is possible to \"magically\" deal damage to the boss using the H key.",
+	"demo_technical_desc":"This demo shows my skills as a video game developer.\nEverything has been done by me. As I am not an artist, all the visuals are made out of shaders and every animation is procedural.\n\nThis project is still a work in progress and will be regularly updated.\n\nControles (kb&m/controller):\n- Space bar/A --> Dash\n- LMB/X --> Light Attack\n- RMB/Y --> Heavy Attack\n- MMB/B --> Ranged Attack\n\nKnown issues:\n- Some programs (such as Steam) make a controller sending keyboard inputs which results into unwanted behaviour.\n- Due to Unity limitations, Playstation controllers do not support haptic feedbacks over bluetooth.",
 	"links":"Links",
 	"dl":"Downloads",
 	"linux_archive":"Linux Archive",
